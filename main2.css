@@ -1,0 +1,39 @@
+body
+{
+    background: lightgray;
+    display: flex;
+    min-height: 90vh;
+}
+
+.box
+{
+    background-color: teal;
+    margin: auto;
+    padding: 50px;
+    border-radius: 15px;
+    
+}
+
+.title
+{
+    color: white;
+    font-size: 42px;
+
+}
+
+.button
+{
+    background: none;
+    text-decoration: none;
+    color: white;
+    box-shadow: 0px 0px 0px 2px white;
+    border-radius: 3px;
+    padding: 5px 16px;
+    transition: 0.5s;
+}
+.button:hover
+{
+    color: black;
+    background-color: white;
+    transition: 0.5s;
+}
