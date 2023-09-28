@@ -37,3 +37,10 @@ body
     background-color: white;
     transition: 0.5s;
 }
+
+.qqq
+{
+    background-color: aqua;
+    color: black;
+    text-decoration: line-through;
+}

@@ -6,6 +6,7 @@ body
 }
 .total
 {
+    margin-top: 40px;
     background-color: teal;
     margin: auto;
     padding: 50px;
@@ -22,6 +23,8 @@ body
 
 .heading
 {
+    margin-top: 0px;
+    
     color: white;
     font-size: 42px;
 }
@@ -54,11 +57,22 @@ body
     width: 100%;
     outline: none;
     font-size: 16px;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin: 0px;
 }
 
-.username::placeholder, .password::placeholder
+.password1
+{
+    color: white;
+    border: none;
+    background: none;
+    box-shadow: 0px 2px 0px 0px white;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    margin: 0px;
+}
+
+.username::placeholder, .password::placeholder, .password1::placeholder
 {
     color:antiquewhite;
 }
@@ -70,7 +84,11 @@ body
     box-shadow: 0px 0px 0px 2px white;
     border-radius: 3px;
     padding: 5px 16px;
+    margin-top: 30px;
     transition: 0.5s;
+    display: flex;
+    position: relative;
+    right: -60px;   
 }
 .login:hover
 {
@@ -79,24 +97,27 @@ body
     transition: 0.5s;
 }
 
-
-
-.signup-btn:hover
+.form label 
 {
-    color: black;
-    background-color: white;
-    transition: 0.5s;
+    color: white;
+    font-weight: bolder;
+    display: flex;
+    text-align: center;
+    padding-top: 25px;   
 }
 
-.signup-btn
+.back
 {
-    background: none;
-    text-decoration: none;
+    position: relative;
+    right: -60px;   
     color: white;
-    box-shadow: 0px 0px 0px 2px white;
-    border-radius: 3px;
-    padding: 5px 16px;
-    transition: 0.5s;
-    float: right;
+    font-size: 14px;
+    text-decoration: none;
+}
 
+.back:hover
+{
+    
+    text-decoration: underline;
+    
 }
