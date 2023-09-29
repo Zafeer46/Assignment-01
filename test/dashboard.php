@@ -1,11 +1,11 @@
 <?php
 
-@include 'config.php';
+@include 'process.php';
 
 session_start();
 
-if(!isset($_SESSION['usermail'])){
-   header('location:login_form.php');
+if(!isset($_SESSION['email'])){
+   header('location:index.php');
 }
 
 ?>

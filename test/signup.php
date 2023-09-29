@@ -70,7 +70,7 @@ if(isset($_POST['submit'])){
                 <input class="password1" id="a3" type="password" placeholder="•••••••••••" name="pass1" required > <br>
                 <input class="login" type="submit" value="Register" name="submit" >
                 <br>
-                <a href="index1.php" class="back">Back to LogIn</a>
+                <a href="index.php" class="back">Back to LogIn</a>
                 
   
             </form>

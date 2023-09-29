@@ -127,14 +127,35 @@ body
     margin-bottom: 25px;
 }
 
-.qqq
+.error-bar
 {
     padding: 10px 5px;
     text-align: center;
-    font-size: 15px;
+    font-size: 12px;
     font-family: sans-serif;
     color: black;
     background-color: lightcoral;
     border-radius: 6px;
     border-width: 4px;
+ 
+}
+
+.qqq
+{
+    padding: 10px 5px;
+    text-align: center;
+    font-size: 12px;
+    font-family: sans-serif;
+    color: purple;
+    background-color: lightcoral;
+    border-radius: 6px;
+    border-width: 4px;
+ 
+}
+
+.error-message .qwerty
+{
+    background-color: aqua;
+    color: blueviolet;
+    text-decoration: wavy;
 }
