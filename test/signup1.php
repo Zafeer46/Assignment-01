@@ -15,10 +15,10 @@ if(isset($_POST['submit'])){
     $result = mysqli_query($conn, $select);
  
     if(mysqli_num_rows($result) > 0){
-       $error[] = 'user already exist';
+       $error[] = 'Email already registered!';
     }else{
        if($pass != $pass1){
-          $error[] = 'password not mathched!';
+          $error[] = 'Passwords do not match!';
        }else{
           $insert = "INSERT INTO credentials(email, password) VALUES('$email','$pass')";
           mysqli_query($conn, $insert);
@@ -36,7 +36,7 @@ if(isset($_POST['submit'])){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="signup1.css">
     <title>Assignment-01</title>
 </head>
 <body>
@@ -44,16 +44,21 @@ if(isset($_POST['submit'])){
         <div class="head">
             <h1 class="heading">Signup</h1>
         </div>
+        <div>
+            
         
         <?php
          if(isset($error)){
+
             foreach($error as $error){
                 
                 echo '<div class="qqq">'.$error.'</div>';
-               
+                
             }
          }
       ?>
+
+        </div>
         
         <div class="form">
             <form method="POST">
@@ -65,7 +70,7 @@ if(isset($_POST['submit'])){
                 <input class="password1" id="a3" type="password" placeholder="•••••••••••" name="pass1" required > <br>
                 <input class="login" type="submit" value="Register" name="submit" >
                 <br>
-                <a href="index.php" class="back">Back to LogIn</a>
+                <a href="index1.php" class="back">Back to LogIn</a>
                 
   
             </form>

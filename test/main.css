@@ -1,3 +1,8 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
 body
 {
     background: lightgray;
@@ -6,7 +11,6 @@ body
 }
 .total
 {
-    margin-top: 40px;
     background-color: teal;
     margin: auto;
     padding: 50px;
@@ -23,10 +27,9 @@ body
 
 .heading
 {
-    margin-top: 0px;
-    
     color: white;
     font-size: 42px;
+    margin: 35px;
 }
 
 .form
@@ -60,19 +63,7 @@ body
     margin: 0px;
 }
 
-.password1
-{
-    color: white;
-    border: none;
-    background: none;
-    box-shadow: 0px 2px 0px 0px white;
-    width: 100%;
-    outline: none;
-    font-size: 16px;
-    margin: 0px;
-}
-
-.username::placeholder, .password::placeholder, .password1::placeholder
+.username::placeholder, .password::placeholder
 {
     color:antiquewhite;
 }
@@ -84,11 +75,7 @@ body
     box-shadow: 0px 0px 0px 2px white;
     border-radius: 3px;
     padding: 5px 16px;
-    margin-top: 30px;
     transition: 0.5s;
-    display: flex;
-    position: relative;
-    right: -60px;   
 }
 .login:hover
 {
@@ -97,27 +84,57 @@ body
     transition: 0.5s;
 }
 
-.form label 
+
+
+.signup-btn:hover
 {
-    color: white;
-    font-weight: bolder;
-    display: flex;
-    text-align: center;
-    padding-top: 25px;   
+    color: black;
+    background-color: white;
+    transition: 0.5s;
 }
 
-.back
+.signup-btn
 {
-    position: relative;
-    right: -60px;   
-    color: white;
-    font-size: 14px;
+    background: none;
     text-decoration: none;
+    color: white;
+    box-shadow: 0px 0px 0px 2px white;
+    border-radius: 3px;
+    padding: 5px 16px;
+    transition: 0.5s;
+    float: right;
+
 }
 
-.back:hover
+.form label
 {
+    color: white;
     
-    text-decoration: underline;
-    
+}
+
+.l{
+    padding-top: 25px;
+}
+
+.r 
+{
+    margin-bottom: 25px;
+}
+
+.t 
+{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.qqq
+{
+    padding: 10px 5px;
+    text-align: center;
+    font-size: 15px;
+    font-family: sans-serif;
+    color: black;
+    background-color: lightcoral;
+    border-radius: 6px;
+    border-width: 4px;
 }
